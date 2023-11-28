@@ -30,4 +30,10 @@ class GreenMenu:
             self.display_menu()
             choice = input("Enter your choice: ")
 
+   if choice == '1':
+            self.view_crop_list()
+            elif choice == '2':
+                self.view_soil_types()
+            elif choice == '3':
+                self.search_crop_info()
 
