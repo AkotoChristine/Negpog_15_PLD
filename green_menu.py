@@ -22,4 +22,12 @@ class GreenMenu:
         print("1. View Crop List")
         print("2. View Soil Types")
         print("3. Search Crop Information")
-        print("4. Exit")     
+        print("4. Exit")
+
+
+   def  run(self):
+        while True:
+            self.display_menu()
+            choice = input("Enter your choice: ")
+
+
