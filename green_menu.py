@@ -21,3 +21,5 @@ class GreenMenu:
         print("Welcome to GreeMenu - Your Agricultural Knowledge Hub")
         print("1. View Crop List")
         print("2. View Soil Types")
+        print("3. Search Crop Information")
+        print("4. Exit")     
