@@ -43,6 +43,18 @@ class GreenMenu:
             else:
                 print("Invalid choice. Please try again.")
 
+    
 
+    def view_crop_list(self):
+        print("\nList of Crops:")
+        for crop in self.crops:
+            print(f"{crop['name']} - Suitable Climate: {crop['climate']}, Suitable Temperature: {crop['temperature']}°C")
+        print()
+
+    def view_soil_types(self):
+        print("\nList of Soil Types:")
+        for soil_type in self.soil_types:
+            print(f"{soil_type['name']} - Description: {soil_type['description']}")
+        print()
 
 
