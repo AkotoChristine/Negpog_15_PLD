@@ -9,3 +9,9 @@ class GreenMenu:
             {"name": "Rice", "climate": "Tropical", "temperature": 25, "soil_types": ["Clay", "Silt"]},
             # we will add more crops as needed
         ]
+    def load_soil_types_data(self):
+        return [
+            {"name": "Loam", "description": "A balanced mixture of sand, silt, and clay"},
+            {"name": "Clay", "description": "Heavy and retains water well"},
+            # we will add more soil types as needed
+        ]
