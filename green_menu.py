@@ -56,4 +56,7 @@ class GreenMenu:
             print(f"{soil_type['name']} - Description: {soil_type['description']}")
         print()
 
+   def search_crop_info(self):
+        crop_name = input("Enter the name of the crop: ")
+        found = False
 
