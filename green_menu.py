@@ -50,4 +50,7 @@ class GreenMenu:
             print(f"{crop['name']} - Suitable Climate: {crop['climate']}, Suitable Temperature: {crop['temperature']}°C")
         print()
 
+    def view_soil_types(self):
+        print("\nList of Soil Types:")
+
 
