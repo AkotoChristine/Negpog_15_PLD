@@ -36,4 +36,8 @@ class GreenMenu:
                 self.view_soil_types()
             elif choice == '3':
                 self.search_crop_info()
+             elif choice == '4':
+                print("Thank you for using GreeMenu. Exiting...")
+                break
+
 
