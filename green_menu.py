@@ -19,3 +19,5 @@ class GreenMenu:
 
    def display_menu(self):
         print("Welcome to GreeMenu - Your Agricultural Knowledge Hub")
+        print("1. View Crop List")
+        print("2. View Soil Types")
