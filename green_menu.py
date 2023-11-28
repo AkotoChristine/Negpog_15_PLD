@@ -15,3 +15,7 @@ class GreenMenu:
             {"name": "Clay", "description": "Heavy and retains water well"},
             # we will add more soil types as needed
         ]
+
+
+   def display_menu(self):
+        print("Welcome to GreeMenu - Your Agricultural Knowledge Hub")
