@@ -17,8 +17,7 @@ class GreenMenu:
             # we will add more soil types as needed
         ]
 
-
-   def display_menu(self):
+    def display_menu(self):
         print("Welcome to GreeMenu - Your Agricultural Knowledge Hub")
         print("1. View Crop List")
         print("2. View Soil Types")
@@ -26,7 +25,7 @@ class GreenMenu:
         print("4. Exit")
 
 
-   def  run(self):
+    def  run(self):
         while True:
             self.display_menu()
             choice = input("Enter your choice: ")
