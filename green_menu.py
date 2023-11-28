@@ -52,5 +52,8 @@ class GreenMenu:
 
     def view_soil_types(self):
         print("\nList of Soil Types:")
+        for soil_type in self.soil_types:
+            print(f"{soil_type['name']} - Description: {soil_type['description']}")
+        print()
 
 
