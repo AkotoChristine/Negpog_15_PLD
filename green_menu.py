@@ -39,5 +39,9 @@ class GreenMenu:
              elif choice == '4':
                 print("Thank you for using GreeMenu. Exiting...")
                 break
+            else:
+                print("Invalid choice. Please try again.")
+
+
 
 
