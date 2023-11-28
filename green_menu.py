@@ -57,4 +57,23 @@ class GreenMenu:
             print(f"{soil_type['name']} - Description: {soil_type['description']}")
         print()
 
+   def search_crop_info(self):
+        crop_name = input("Enter the name of the crop: ")
+        found = False
+        
+        for crop in self.crops:
+            if crop['name'].lower() == crop_name.lower():
+                found = True
+                print(f"\nCrop Information for {crop['name']}:")
+                print(f"Suitable Climate: {crop['climate']}")
+                print(f"Suitable Temperature: {crop['temperature']}°C")
+                print(f"Suitable Soil Types: {', '.join(crop['soil_types'])}")
+                break
+           
 
+              if not found:
+            print(f"Crop {crop_name} not found in the database.")
+
+if _name_ == "_main_":
+    app = GreeMenu()
+    app.run()
