@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 class GreenMenu:
     def __init__(self):
         self.crops = self.load_crops_data()
