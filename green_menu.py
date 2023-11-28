@@ -68,4 +68,11 @@ class GreenMenu:
                 print(f"Suitable Temperature: {crop['temperature']}°C")
                 print(f"Suitable Soil Types: {', '.join(crop['soil_types'])}")
                 break
+           
 
+              if not found:
+            print(f"Crop {crop_name} not found in the database.")
+
+if _name_ == "_main_":
+    app = GreeMenu()
+    app.run()
