@@ -8,13 +8,14 @@ class GreenMenu:
         return [
             {"name": "Wheat", "climate": "Temperate", "temperature": 15, "soil_types": ["Loam", "Clay"]},
             {"name": "Rice", "climate": "Tropical", "temperature": 25, "soil_types": ["Clay", "Silt"]},
-            # we will add more crops as needed
+            # Add more crops as needed
         ]
+
     def load_soil_types_data(self):
         return [
             {"name": "Loam", "description": "A balanced mixture of sand, silt, and clay"},
             {"name": "Clay", "description": "Heavy and retains water well"},
-            # we will add more soil types as needed
+            # Add more soil types as needed
         ]
 
     def display_menu(self):
@@ -24,25 +25,22 @@ class GreenMenu:
         print("3. Search Crop Information")
         print("4. Exit")
 
-
-    def  run(self):
+    def run(self):
         while True:
             self.display_menu()
             choice = input("Enter your choice: ")
 
-   if choice == '1':
-            self.view_crop_list()
+            if choice == '1':
+                self.view_crop_list()
             elif choice == '2':
                 self.view_soil_types()
             elif choice == '3':
                 self.search_crop_info()
-             elif choice == '4':
+            elif choice == '4':
                 print("Thank you for using GreeMenu. Exiting...")
                 break
             else:
                 print("Invalid choice. Please try again.")
-
-    
 
     def view_crop_list(self):
         print("\nList of Crops:")
@@ -56,7 +54,7 @@ class GreenMenu:
             print(f"{soil_type['name']} - Description: {soil_type['description']}")
         print()
 
-   def search_crop_info(self):
+    def search_crop_info(self):
         crop_name = input("Enter the name of the crop: ")
         found = False
         
@@ -68,11 +66,12 @@ class GreenMenu:
                 print(f"Suitable Temperature: {crop['temperature']}°C")
                 print(f"Suitable Soil Types: {', '.join(crop['soil_types'])}")
                 break
-           
 
-              if not found:
+        if not found:
             print(f"Crop {crop_name} not found in the database.")
 
-if _name_ == "_main_":
-    app = GreeMenu()
+if __name__ == "__main__":
+    app = GreenMenu()
     app.run()
+
+  
