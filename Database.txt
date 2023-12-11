@@ -1,0 +1,32 @@
+#DESCRIBE TABLE crop
+describe crops;
+
+#TABLE crop data
+select * from crops;
+
+#DESCRIBE TABLE soil_types
+describe soil_types;
+
+#DESCRIBE TABLE soil_types
+select * from soil_types;
+
+#INSERT DATA in Table crop
+INSERT INTO crops (name, climate, temperature, soil_type_id) VALUES
+    ('Wheat', 'Temperate', '15', 1),
+    ('Rice', 'Tropical', '25', 1),
+    ('Maize', 'Warm-season crop', '15°C to 35°C', 1),
+    ('Potatoes', 'Cool-season crop', '7°C to 21°C', 1),
+    ('Tomatoes', 'Warm-season crop', '10°C to 29°C', 1),
+    ('Cotton', 'Warm-season crop', '15°C to 35°C', 1),
+    ('Soybeans', 'Warm-season crop', '15°C to 27°C', 1),
+    ('Citrus Fruits', 'Tropical', '13°C to 32°C', 1),
+    ('Coffee', 'Tropical', '15°C to 21°C', 1),
+    ('Carrots', 'Cool-season crop', '15°C to 21°C', 1);
+-- Add more crops as needed
+
+
+#INSERT DATA in Table soil_types
+INSERT INTO soil_types (name, description) VALUES
+    ('Loam', 'A balanced mixture of sand, silt, and clay'),
+    ('Clay', 'Heavy and retains water well');
+-- Add more soil types as needed
